@@ -2,6 +2,11 @@
     text-align: center;
 }
 
+hr {
+    position: relative;
+    bottom: 25px;
+}
+
 .flex {
     display: flex;
     justify-items: center;
@@ -15,6 +20,10 @@
 
 ul li{
     padding: 0px 0px 5px 15px;
+}
+
+.data {
+    width: 27ch;
 }
 
 #grid {
@@ -36,8 +45,12 @@ ol > li {
     margin: 5px 0 5px 0px;
 }
 
-fieldset legend {
-    margin-top: 1cm;
+#fixed {
+    position: fixed;
+    right: 0in;
+    bottom: 0in;
+    margin-bottom: 0.5%;
+    margin-right: 0.5%;
 }
 
 fieldset > textarea {
