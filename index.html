@@ -2,14 +2,15 @@
 <html lang="en">
 
 <head>
-  <title>Allo!</title>
+  <title>Tim's site</title>
   <meta charset="UTF-8">
   <link rel="icon" type="image/x-icon" href="https://a.slack-edge.com/5f35cf0/img/icons/favicon-32-ua.png">
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
   <header>
-    <h1>Team Minutes</h1>
+    <h1 class="title">Team Minutes</h1>
     <hr>
     <h3>Navigation</h3>
     <nav>
@@ -64,7 +65,7 @@
     </div>
   </main>
   <footer>
-    <h3>Voided input</h3>
+    <h3 class="title">Voided input</h3>
     <form>
       <fieldset>
         <legend>How's your day on <input type="date"></legend>
@@ -79,7 +80,9 @@
         <input type="radio" id="5" name="survey">
         <label for="5">Custom: </label><input type="text"><br>
         <input type="radio" id="6" name="survey">
-        <label for="6">In case you want to write more: </label><textarea></textarea>
+        <label for="6">In case you want to write more: </label>
+        <br>
+        <textarea></textarea>
       </fieldset>
       <span>Thoughts?<br>
         <input list="list">
@@ -96,26 +99,24 @@
       </select>
       <br>
       <br>
-      <div>
-        <input type="checkbox">
+      <div class="flex">
         <label>You have seen 40 html elements</label><br>
         <input type="checkbox">
         <label>You have pressed all buttons</label><br>
         <input type="checkbox">
         <label>You had a good day</label><br>
+        <input type="checkbox">
       </div>
       <button type="reset">Void the input!</button>
     </form>
-    <section>
-      <h4>Even more random: one of my favorite DDR songs</h4>
-      <audio controls>
+    <h4>Even more random: one of my favorite DDR songs</h4>
+    <section id="grid">
+      <audio id="grid1" controls>
         <source src="part1/MAX300aud.ogg">
         Audio to the song.
       </audio>
-      <br>
-      <img src="part1/MAX300pic.png" alt="Cover of the song">
-      <br>
-      <video controls>
+      <img id="grid2" src="part1/MAX300pic.png" alt="Cover of the song">
+      <video id="grid3" controls>
         <source src="part1/MAX300vid.mp4">
         The stepchart of the song.
       </video>
