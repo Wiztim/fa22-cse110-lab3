@@ -1,0 +1,50 @@
+.title {
+    text-align: center;
+}
+
+.flex {
+    display: flex;
+    justify-items: center;
+    flex-direction: row-reverse;
+    flex-flow: row-reverse nowrap;
+}
+
+.flex label {
+    width: 33%;
+}
+
+ul li{
+    padding: 0px 0px 5px 15px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: 640px auto;
+    gap: 10px;
+}
+
+#grid1 {
+    padding-top: 50px;
+}
+
+#grid3 {
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+ol > li {
+    margin: 5px 0 5px 0px;
+}
+
+fieldset legend {
+    margin-top: 1cm;
+}
+
+fieldset > textarea {
+    width: 96.5vmax;
+    height: 3rem;
+    min-width: 640px;
+    max-width: 96.5vmax;
+    max-height: 100pt;
+    margin: auto;
+}
