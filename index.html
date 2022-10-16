@@ -10,6 +10,7 @@
 
 <body>
   <header>
+    <div class="none"><b>TEXT THAT IS UNRELATED</b></div>
     <h1 class="title">Team Minutes</h1>
     <hr>
     <h3>Navigation</h3>
@@ -41,7 +42,7 @@
             <summary><em>Introducing ourselves</em></summary>
             <p>We each took turns stating out major, year, and a fact
               about
-              ourselves</p>
+              ourselves.</p>
           </details>
         </li>
         <li>
@@ -49,7 +50,7 @@
             <summary><em>What kind of roles will be available</em></summary>
             <p>There will be a few roles assigned:
               <b>development, QA,
-                and design</b>
+                and design.</b> Decision of who gets what roles will be next week.
             </p>
           </details>
         </li>
@@ -57,8 +58,9 @@
           <details>
             <summary><em>Meeting time</em></summary>
             <p>We could not meet again at the same time in the future, and will
-              discuss one
-            <i>Slack</i> when to meet next time</p>
+              discuss on
+              <i>Slack</i> when to meet next time.
+            </p>
           </details>
         </li>
       </ol>
@@ -84,8 +86,9 @@
         <br>
         <textarea></textarea>
       </fieldset>
-      <span>Thoughts?<br>
-        <input list="list">
+      <span>
+        <p>Thoughts?</p>
+        <input list="list" class="data">
         <datalist id="list">
           <option>Too many thoughts...</option>
           <option>Not too many, not too few!</option>
@@ -107,7 +110,7 @@
         <label>You had a good day</label><br>
         <input type="checkbox">
       </div>
-      <button type="reset">Void the input!</button>
+      <button type="reset" id="fixed">Void the input!</button>
     </form>
     <h4>Even more random: one of my favorite DDR songs</h4>
     <section id="grid">
