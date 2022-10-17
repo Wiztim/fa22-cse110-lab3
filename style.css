@@ -1,34 +1,42 @@
+/* Make the background grey and change the font */
 * {
     background-color: hsl(0, 0%, 70%);
     font-family: 'Open Sans', sans-serif;
 }
 
-div~h1 {
-    color: #006466;
-}
-
+/* Remove something uselss */
 .none {
     display: none;
 }
 
+/* Change the Meeting Minutes color */
+div~h1 {
+    color: #006466;
+}
+
+/* Give fillable areas a color to not be grey */
 .fillable,
 select * {
     background-color: aliceblue;
 }
 
+/* Give some fillable areas a different color */
 input.fillable {
     border-color: darkgreen;
 }
 
+/* Align section headings to center */
 .title {
     text-align: center;
 }
 
+/* Move the line after the first title up a bit */
 hr {
     position: relative;
     bottom: 25px;
 }
 
+/* Make the options appear horizontally instead of vertically */
 .flex {
     display: flex;
     justify-items: center;
@@ -36,14 +44,17 @@ hr {
     flex-flow: row-reverse nowrap;
 }
 
+/* Space the options out a bit */
 .flex label {
     width: 33%;
 }
 
+/* Add space between names */
 ul li {
     padding: 0px 0px 5px 15px;
 }
 
+/* Add a strange border to the name list */
 ul {
     border-style: solid;
     border-color: floralwhite;
@@ -51,57 +62,68 @@ ul {
     border-radius: 10% 70% 70% 10%;
 }
 
+/* Make the clickable element become red when hovered over */
 summary:hover {
     color: red;
     text-decoration: underline;
 }
 
+/* Make the clickable element become blue while clicked */
 summary:active {
     color: rgb(50, 139, 255);
 }
 
+/* Give indented elements extra attention by putting them on a new line */
 i {
     display: block;
 }
 
+/* Spice up the color of "How's your day" */
 input + label[for] {
     color:blueviolet;
 }
 
+/* Make the box big enough to fit the longest option */
 .data {
     width: 27ch;
 }
 
+/* Create a grid for the DDR section */
 #grid {
     display: grid;
     grid-template-columns: 640px auto;
     gap: 10px;
 }
 
+/* Move the audio down a bit */
 #grid1 {
     padding-top: 50px;
 }
 
+/* Arrange the video to be to the eft */
 #grid3 {
     grid-row-start: 1;
     grid-row-end: 3;
 }
 
+/* Add space between summary elements */
 ol>li {
     margin: 5px 0 5px 0px;
 }
 
+/* If viewing from phone, but the void button in the top right */
 @media (min-width:320px) {
     #fixed {
         background-color: ghostwhite;
         position: fixed;
         right: 0in;
-        bottom: 0in;
-        margin-bottom: 0.5%;
+        top: 0in;
+        margin-top: 0.5%;
         margin-right: 0.5%;
     }
 }
 
+/* Otherwise, put it in the bottom right */
 @media not (min-width:320px) {
     #fixed {
         background-color: ghostwhite;
@@ -113,6 +135,7 @@ ol>li {
     }
 }
 
+/* Give the textarea limits since it can be too big or too small normally */
 fieldset>textarea {
     width: 96.5vmax;
     height: 3rem;
