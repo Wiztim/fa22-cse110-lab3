@@ -1,16 +1,18 @@
 * {
     background-color: hsl(0, 0%, 70%);
+    font-family: 'Open Sans', sans-serif;
 }
 
-div ~ h1 {
-   color: #006466;
+div~h1 {
+    color: #006466;
 }
 
 .none {
     display: none;
 }
 
-.fillable, select * {
+.fillable,
+select * {
     background-color: aliceblue;
 }
 
@@ -34,12 +36,20 @@ hr {
     width: 33%;
 }
 
-ul li{
+ul li {
     padding: 0px 0px 5px 15px;
+}
+
+ul {
+    border-style: solid;
+    border-color: floralwhite;
+    border-width: 15px 0px 15px 10px;
+    border-radius: 10% 70% 70% 10%;
 }
 
 summary:hover {
     color: red;
+    text-decoration: underline;
 }
 
 summary:active {
@@ -69,20 +79,33 @@ i {
     grid-row-end: 3;
 }
 
-ol > li {
+ol>li {
     margin: 5px 0 5px 0px;
 }
 
-#fixed {
-    background-color: ghostwhite;
-    position: fixed;
-    right: 0in;
-    bottom: 0in;
-    margin-bottom: 0.5%;
-    margin-right: 0.5%;
+@media (min-width:320px) {
+    #fixed {
+        background-color: ghostwhite;
+        position: fixed;
+        right: 0in;
+        bottom: 0in;
+        margin-bottom: 0.5%;
+        margin-right: 0.5%;
+    }
 }
 
-fieldset > textarea {
+@media not (min-width:320px) {
+    #fixed {
+        background-color: ghostwhite;
+        position: fixed;
+        right: 0in;
+        bottom: 0in;
+        margin-bottom: 0.5%;
+        margin-right: 0.5%;
+    }
+}
+
+fieldset>textarea {
     width: 96.5vmax;
     height: 3rem;
     min-width: 640px;
