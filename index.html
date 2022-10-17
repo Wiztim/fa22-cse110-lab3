@@ -67,7 +67,7 @@
     </div>
   </main>
   <footer>
-    <h3 class="title">Voided input</h3>
+    <h1 class="title">Voided input</h1>
     <form>
       <fieldset>
         <legend>How's your day on <input type="date"></legend>
@@ -80,22 +80,22 @@
         <input type="radio" id="4" name="survey">
         <label for="4">Bad...</label><br>
         <input type="radio" id="5" name="survey">
-        <label for="5">Custom: </label><input type="text"><br>
+        <label for="5">Custom: </label><input type="text" class="fillable"><br>
         <input type="radio" id="6" name="survey">
         <label for="6">In case you want to write more: </label>
         <br>
-        <textarea></textarea>
+        <textarea class="fillable"></textarea>
       </fieldset>
       <span>
         <p>Thoughts?</p>
-        <input list="list" class="data">
+        <input list="list" class="data" >
         <datalist id="list">
           <option>Too many thoughts...</option>
           <option>Not too many, not too few!</option>
           <option>Head empty</option>
         </datalist>
       </span>
-      <select>
+      <select class="fillable">
         <option>and I want more!</option>
         <option>and that's just right!</option>
         <option>and I wish I had less...</option>
