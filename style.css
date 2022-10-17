@@ -1,5 +1,17 @@
+* {
+    background-color: hsl(0, 0%, 70%);
+}
+
+div ~ h1 {
+   color: #006466;
+}
+
 .none {
     display: none;
+}
+
+.fillable, select * {
+    background-color: aliceblue;
 }
 
 .title {
@@ -24,6 +36,14 @@ hr {
 
 ul li{
     padding: 0px 0px 5px 15px;
+}
+
+summary:hover {
+    color: red;
+}
+
+summary:active {
+    color: rgb(50, 139, 255);
 }
 
 i {
@@ -54,6 +74,7 @@ ol > li {
 }
 
 #fixed {
+    background-color: ghostwhite;
     position: fixed;
     right: 0in;
     bottom: 0in;
